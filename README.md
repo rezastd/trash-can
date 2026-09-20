@@ -39,8 +39,8 @@ TRASHCAN_TLS_CERT=certs/cert.pem TRASHCAN_TLS_KEY=certs/key.pem \
 uv run python -m backend.app
 ```
 
-On your phone (same Wi-Fi): open `https://192.168.1.9:8000`
-(or `https://DNID3335L01.local:8000`). The certificate is self-signed,
+On your phone (same Wi-Fi): open `https://192.168.x.x:8000`
+(or `https://xxxxx.local:8000`). The certificate is self-signed,
 so tap through the browser warning (Show Details → visit this website).
 For local use without a phone: `http://127.0.0.1:8000` with no TLS vars.
 
