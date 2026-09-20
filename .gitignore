@@ -1,0 +1,9 @@
+.venv/
+.env
+node_modules/
+frontend/dist/
+frontend/node_modules/
+certs/
+__pycache__/
+*.pyc
+.DS_Store

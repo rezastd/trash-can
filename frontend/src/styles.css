@@ -1,0 +1,273 @@
+:root {
+  --ink: #1c1a17;
+  --muted: #5f5a52;
+  --line: #e2ddd2;
+  --accent: #1d7a3d;
+  --accent-dark: #145c2e;
+  --danger: #b3261e;
+  --card: #ffffff;
+  --wash: #f3f0e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--wash);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  line-height: 1.45;
+}
+
+.page {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 16px 16px 48px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin: 8px 0 12px;
+  letter-spacing: -0.01em;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+nav button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+nav button.active {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.camera-box {
+  background: #111;
+  border-radius: 12px;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.camera-box .muted {
+  color: #b9b4a8;
+  padding: 24px;
+  text-align: center;
+}
+
+.camera {
+  width: 100%;
+  max-height: 60vh;
+  display: block;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.row.spread {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+button,
+.file-btn {
+  font-size: 1rem;
+  padding: 11px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+button.primary:active {
+  background: var(--accent-dark);
+}
+
+.file-btn {
+  display: inline-block;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+.error {
+  color: var(--danger);
+  background: #fbeae9;
+  border: 1px solid #f1c6c2;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.notice {
+  color: var(--accent-dark);
+  background: #e6f3ea;
+  border: 1px solid #bfe0c9;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.result {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.result .kicker {
+  margin: 0;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+}
+
+.result h2 {
+  margin: 2px 0 10px;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.conf-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.conf-track {
+  flex: 1;
+  height: 10px;
+  background: #ece7db;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.conf-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 6px;
+}
+
+.conf-num {
+  font-weight: 700;
+  min-width: 3ch;
+  text-align: right;
+}
+
+.runner {
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+
+.result details {
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.result summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.desc-row {
+  display: flex;
+  gap: 8px;
+  margin: 6px 0;
+}
+
+.desc-row dt {
+  flex: 0 0 88px;
+  color: var(--muted);
+}
+
+.desc-row dd {
+  margin: 0;
+}
+
+.bin-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.bin-id {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.danger-link {
+  border: none;
+  background: none;
+  color: var(--danger);
+  padding: 4px 0;
+  font-size: 0.95rem;
+}
+
+.bin-card label {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.bin-card input,
+.bin-card textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  resize: vertical;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

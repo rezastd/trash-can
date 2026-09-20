@@ -1,0 +1,24 @@
+{
+  "bins": [
+    {
+      "id": "recycle",
+      "name": "Recycle",
+      "rules": "Clean paper, cardboard, metal cans, glass bottles and jars, and rigid plastics marked recyclable. Must be empty, clean, and dry."
+    },
+    {
+      "id": "compost",
+      "name": "Compost / Organics",
+      "rules": "Food scraps, food-soiled paper and cardboard, coffee grounds, and yard trimmings. No plastics, glass, or metal."
+    },
+    {
+      "id": "landfill",
+      "name": "Landfill",
+      "rules": "Anything that fits no other bin: chip bags, candy wrappers, styrofoam, broken ceramics, and other non-recyclable, non-compostable waste."
+    },
+    {
+      "id": "hazardous",
+      "name": "Hazardous / Special",
+      "rules": "Batteries, electronics, paint, chemicals, light bulbs, and medical waste. These need a drop-off point, never a curbside can."
+    }
+  ]
+}
